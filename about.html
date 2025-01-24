@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +13,16 @@
             box-sizing: border-box;
             background-color: #222;
             color: white;
-            font-size: 18px; /* Adjusted to match index.html */
+            font-size: 18px;
         }
         .navbar {
             background-color: #111;
-            padding: 30px 30px; /* Adjusted to match index.html */
+            padding: 30px 30px;
             color: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 20px; /* Adjusted to match index.html */
+            font-size: 20px;
         }
         .navbar a {
             color: white;
@@ -32,59 +32,48 @@
         .hero-section {
             background-color: #0066cc;
             color: white;
-            padding: 50px 20px; /* Adjusted to match index.html */
+            padding: 50px 20px;
             text-align: center;
         }
-        .about-section {
-            padding: 70px 20px; /* Retained original value */
+        .projects-section {
+            text-align: center;
+            padding: 60px 20px;
             background-color: #333;
-            text-align: center;
         }
-        .about-section img {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        .team-section {
-            padding: 70px 20px;
-            background-color: #444;
-            text-align: center;
-        }
-        .team {
+        .projects {
             display: flex;
             justify-content: center;
             gap: 40px;
             flex-wrap: wrap;
         }
-        .team-member {
+        .project {
             background-color: #555;
             padding: 20px;
             border-radius: 10px;
             width: 300px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
             color: white;
+            cursor: pointer;
         }
-        .team-member img {
+        .project img {
             width: 100%;
-            height: 400px;
-            object-fit: cover;
+            height: auto;
             border-radius: 10px;
+            cursor: pointer;
         }
         .footer {
             background-color: #111;
             color: white;
             text-align: center;
-            padding: 20px; /* Adjusted to match index.html */
+            padding: 20px;
             margin-top: 50px;
-            font-size: 18px; /* Adjusted to match index.html */
+            font-size: 18px;
         }
         h1, h2 {
-            font-size: 28px; /* Adjusted to match index.html */
+            font-size: 28px;
         }
         h3 {
-            font-size: 24px; /* Adjusted to match index.html */
+            font-size: 24px;
         }
     </style>
 </head>
@@ -94,39 +83,31 @@
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
         </div>
     </div>
 
     <div class="hero-section">
-        <h1>Multiple Faceless</h1>
-        <p></p>
+        <h1>Welcome to Second life</h1>
+        <p>"Warning: Once this path is chosen, there is no turning back. All consequences must be faced, as there is no return policy. Proceed with absolute certainty.."</p>
     </div>
 
-    <div class="about-section">
-        <h2>Our Mission</h2>
-        <p>We make it happen to You... This is your moment. </p>
-        <p>We present to you of a second chance - a new life, a different timeline, a fate that rests in your own hands. Every decision you make from here will shape your destiny and the consequences that follow.</p>
-        <p>But heed this warning: once reborn, there is no return. Every step is yours to take, every choice yours to own. Embrace this path, for it is now and forever yours.</p>
-    </div>
-
-    <div class="team-section">
-        <h2>Our Team</h2>
-        <div class="team">
-            <div class="team-member">
-                <img src="gandalf.jpg" alt="Team Member Gandalf - Library Director">
-                <h3>Gandalf</h3>
-                <p></p>
+    <div class="projects-section">
+        <h2>Choose Timeline</h2>
+        <div class="projects">
+            <div class="project" onclick="window.location.href='about.html';">
+                <img src="windcity.jpg" alt="Wind City">
+                <h3>Aetheria</h3>
+                <p>Awakening in a realm above the clouds, where grand cities drift effortlessly in the sky, the hero stands in awe of the wonders suspended amidst the heavens.</p>
             </div>
-            <div class="team-member">
-                <img src="lucifer.jpg" alt="Team Member Lucifer">
-                <h3>Lucifer</h3>
-                <p></p>
+            <div class="project" onclick="window.location.href='about.html';">
+                <img src="underwatercity.jpg" alt="Underwater City">
+                <h3>Abyssal Atlantis</h3>
+                <p>Transported beneath the ocean’s surface, our hero finds themselves amidst a forgotten city where fish glide through alleyways and ancient secrets linger in the shadows of sunken towers.</p>
             </div>
-            <div class="team-member">
-                <img src="angel.jpg" alt="Team Member Angel">
-                <h3>Seraphim</h3>
-                <p></p>
+            <div class="project" onclick="window.location.href='about.html';">
+                <img src="cyberpunkcityjpg.jpg" alt="Cyberpunk City">
+                <h3>Neon Nexus</h3>
+                <p>Thrown into the chaotic heart of a neon-soaked future, where towering structures loom above and the glowing lights promise both danger and adventure at every turn.</p>
             </div>
         </div>
     </div>
