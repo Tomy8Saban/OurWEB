@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Galeri Karya Pengguna</title>
+</head>
+<body>
+    <header class="bg-success text-white text-center p-4">
+        <h1>Galeri Karya Pengguna</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href ="index.html">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tutorial.html">Tutorial</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="shop.html">Toko</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Galeri</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <h2>Hasil Kerajinan Pengguna</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="assets/images/kerajinan1.jpg" class="img-fluid" alt="Kerajinan 1">
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/kerajinan2.jpg" class="img-fluid" alt="Kerajinan 2">
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/kerajinan3.jpg" class="img-fluid" alt="Kerajinan 3">
+            </div>
+        </div>
+        <h3>Bagikan Hasil Kerajinan Anda</h3>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="user-name">Nama:</label>
+                <input type="text" id="user-name" name="user-name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="user-photo">Foto Kerajinan:</label>
+                <input type="file" id="user-photo" name="user-photo" class="form-control" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn btn-success">Kirim</button>
+        </form>
+        <h3>Voting Karya Terbaik</h3>
+        <div class="voting-system">
+            <p>Vote untuk karya favorit Anda!</p>
+            <button class="btn btn-primary">Vote Kerajinan 1</button>
+            <button class="btn btn-primary">Vote Kerajinan 2</button>
+            <button class="btn btn-primary">Vote Kerajinan 3</button>
+        </div>
+    </main>
+
+    <footer class="bg-success text-white text-center p-3">
+        <p>&copy; 2023 KreasiDIY. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
